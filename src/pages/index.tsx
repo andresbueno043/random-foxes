@@ -13,10 +13,10 @@ const inter = Inter({ subsets: ["latin"] });
 const generateId = () => Math.random().toString(36).substring(2, 9);
 
 export default function Home() {
-  const [images, setImages] = useState<IImageItem[]>([]);
+  const [images, setImages] = useState<ImageItem[]>([]);
 
   const addNewFox: MouseEventHandler<HTMLButtonElement> = (event) => {
-    const newImageItem: IImageItem = {
+    const newImageItem: ImageItem = {
       id: generateId(),
       url: `https://randomfox.ca/images/${myRandom()}.jpg`,
     };
