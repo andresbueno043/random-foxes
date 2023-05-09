@@ -3,6 +3,7 @@ import type { MouseEventHandler } from "react";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import { LazyImage } from "@/components/LazyImage";
+import { GithubButton } from "react-github-link-button/dist";
 import { type } from "os";
 import { random } from "lodash";
 
@@ -56,6 +57,10 @@ export default function Home() {
             </div>
           ))}
         </div>
+        <GithubButton 
+          href="https://github.com/andresbueno043/random-foxes"
+          message="Check out my code!"
+        />
       </main>
     </>
   );
